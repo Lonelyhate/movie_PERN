@@ -1,0 +1,79 @@
+.movie-item{
+    width: 300px;
+    height: 200px;
+    background: rgba(11, 23, 31, .22);
+    margin-bottom: 20px;
+    position: relative;
+    &:not(:nth-child(3n)) {
+        margin-right: 20px;
+    }
+    &:hover{
+        & .movie-item__hide{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+        & .movie-item__link{
+            bottom: 20px;
+        }
+    }
+    &__main{
+        display: flex;
+    }
+    &__img{
+        width: 133px;
+        height: 200px;
+        img{
+            display: block;
+            width: 133px;
+            height: 100%;
+        }
+    }
+    &__info{
+        padding: 10px 0 0 20px;
+    }
+    &__name{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    &__text{
+        color: #c6c6c6;
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 5px;
+        span{
+            color: #25bde3;
+            font-size: 16px;
+        }
+
+    }
+    &__hide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 10px;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    &__descr{
+        color: #fff;
+        text-align: center;
+    }
+    &__link{
+        position: absolute;
+        bottom: 0px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #6ac045;
+        padding: 8px 15px;
+        border-radius: 20px;
+        left: 50px;
+        transition: bottom 0.3s ease;
+    }
+}

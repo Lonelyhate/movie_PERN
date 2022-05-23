@@ -1,0 +1,89 @@
+.modal-movie{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    &.active{
+        opacity: 1;
+        pointer-events: all;
+        visibility: visible;
+    }
+    &__content{
+        background-color: #fff;
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+        svg{
+            cursor: pointer;
+            font-size: 24px;
+            transform: translateY(2px);
+        }
+    }
+    &__middle{
+        padding: 20px 0;
+        border-bottom: 1px solid #000;
+        margin-bottom: 10px;
+    }
+    &__input{
+        padding: 7px;
+        width: 100%;
+        outline: none;
+        margin-bottom: 10px;
+    }
+    &__textarea{
+        width: 100%;
+        resize: none;
+        height: 80px;
+        outline: none;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+    &__label{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        span{
+            flex-shrink: 0;
+        }
+    }
+    &__select{
+        height: 34px;
+        width: 100%;
+        padding: 0 7px;
+        font-size: 15px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    &__input-file{
+        margin-left: 10px;
+    }
+    &__add{
+        display: block;
+        margin-left: auto;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 8px 15px;
+        border: none;
+        color: #fff;
+        background-color: rgb(68, 190, 38);
+        cursor: pointer;
+        border-radius: 6px;
+    }
+}

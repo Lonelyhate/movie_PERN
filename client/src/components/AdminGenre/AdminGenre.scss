@@ -1,0 +1,27 @@
+.admin-genre{
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 880px;
+    &__header{
+        background-color: #353739;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__chapter-name{
+        padding: 10px 0;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        &:not(:last-child) {
+            border-right: 1px solid #575756;
+        }
+    }
+    &__notfound{
+        display: block;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}

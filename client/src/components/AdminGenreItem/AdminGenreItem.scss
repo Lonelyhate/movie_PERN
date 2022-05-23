@@ -1,0 +1,30 @@
+.admin-genre-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+    padding: 10px 0;
+    &:not(:first-child){
+        border-top: 1px solid #575756;
+    }
+    &__text{
+        justify-self: center;
+        button{
+            width: 130px;
+            background-color: #9d3939;
+            border: none;
+            color: #fff;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 10px;
+            cursor: pointer;
+            svg{
+                margin-left: 5px;
+            }
+        }
+    }
+}

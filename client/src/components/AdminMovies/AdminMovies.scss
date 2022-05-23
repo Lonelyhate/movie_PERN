@@ -1,0 +1,52 @@
+.admin-movies{
+    padding-top: 20px;
+    width: 880px;
+    margin-left: 20px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #575756;
+        margin-bottom: 20px;
+    }
+    &__title{
+        color: #fff;
+        font-size: 24px;
+    }
+    &__btn-add{
+        background-color: #353739;
+        color: #fff;
+        border: none;
+        font-weight: 600;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    &__header{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: #353739;
+        color: #fff;
+    }
+    &__name-chapter{
+        padding: 10px 0;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        &:not(:last-child) {
+            border-right: 1px solid #575756;
+        }
+    }
+    &__notfound{
+        display: block;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #fff;
+        text-align: center;
+    }
+    &__loading{
+        width: 80px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,79 @@
+.inner{
+    &__content{
+        background: url('../../assets/img/pexels-quark-studio-2507025.jpg') center no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        &::after{
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__title{
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__search-block{
+        position: relative;
+        z-index: 5;
+        height: 40px;
+        margin-bottom: 35px;
+    }
+    &__search-movie{
+        display: flex;
+    }
+    &__search{
+        display: flex;
+        align-items: center;
+        background-color: #353739;
+        padding: 0 10px;
+        width: 485px;
+        border-radius: 4px;
+        border: 1px solid #575756;
+        svg{
+            margin-right: 5px;
+            fill: #fff;
+        }
+    }
+    &__search-input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 10px 3px;
+        width: 100%;
+        color: #fff;
+        &::placeholder{
+            color: #fff;
+        }
+    }
+    &__search__btn{
+        margin-left: 10px;
+        color: #fff;
+        font-weight: 600;
+        background-color: #46dc00;
+        border: 1px solid #575756;
+        cursor: pointer;
+        padding: 0 20px;
+        border-radius: 4px;
+        
+    }
+    &__selects{
+        margin-top: 20px;
+        position: relative;
+        z-index: 6;
+        display: flex;
+    }
+}

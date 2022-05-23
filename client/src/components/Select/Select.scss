@@ -1,0 +1,23 @@
+.select{
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    &__title{
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__select{
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        height: 40px;
+        background-color: #353739;
+        color: #fff;
+        width: 130px;
+        border: 1px solid #575756;
+        outline: none;
+        padding: 0 10px;
+    }
+}

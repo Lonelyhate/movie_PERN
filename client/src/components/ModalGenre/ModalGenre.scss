@@ -1,0 +1,57 @@
+.modal-genre{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    &.active{
+        opacity: 1;
+        pointer-events: all;
+        visibility: visible;
+    }
+    &__content{
+        background-color: #fff;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        svg{
+            font-size: 22px;
+            transform: translateY(2px);
+            cursor: pointer;
+        }
+    }
+    &__input{
+        display: block;
+        padding: 8px;
+        font-size: 15px;
+        width: 100%;
+        outline: none;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        display: block;
+        margin-left: auto;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 8px 15px;
+        border: none;
+        color: #fff;
+        background-color: #44be26;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+}
